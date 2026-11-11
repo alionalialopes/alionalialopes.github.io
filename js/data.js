@@ -186,4 +186,4 @@ window.CASES = [
   }
 ];
 
-window.TOOLS = ["Jira", "Figma", "Miro", "ChatGPT", "Claude"];
+window.TOOLS = ["Jira", "Figma", "Miro", "ChatGPT", "Claude", "Claude Code", "Lovable", "Gemini", "Trello", "Supabase", "Slack", "Notion", "Confluence"];

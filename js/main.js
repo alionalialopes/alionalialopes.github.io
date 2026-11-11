@@ -34,7 +34,7 @@
     card.setAttribute("aria-haspopup", "dialog");
     const thumb = c.image ? `<span class="case-card__img"><img src="${root}${c.imageSmall || c.image}" alt="${esc(c.imageAlt || "")}" width="800" height="556" loading="lazy" decoding="async"></span>` : "";
     card.innerHTML = `${thumb}
-      <span class="case-card__top"><span class="badge${c.type === "launched" ? "" : " badge--concept"}">${typeLabel[c.type] || c.type}</span><span class="case-card__n">${String(i + 1).padStart(2, "0")}</span></span>
+      <span class="case-card__top"><span class="badge${c.type === "launched" ? "" : " badge--concept"}">${typeLabel[c.type] || c.type}</span></span>
       <span class="case-card__title">${esc(c.title)}</span>
       <span class="case-card__role">${esc(c.role || "")}</span>
       <span class="case-card__headline">${esc(c.headline || "")}</span>
