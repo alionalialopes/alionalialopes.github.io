@@ -27,7 +27,7 @@ window.CASES = [
     title: "ImaginaKIDS",
     type: "launched",
     role: "Product Manager · da concepção ao mercado",
-    headline: "Criação da EdTech: de 1 escola piloto a 6 escolas contratantes em 12 meses.",
+    headline: "Criação da EdTech: de 1 escola piloto a 7 escolas contratantes em 12 meses.",
     metrics: [
       { value: "+1.253%", label: "faturamento em 12 meses (R$ 8,5 mil → R$ 115 mil)" },
       { value: "65,6%", label: "conversão de pais compradores (meta: 60%)" },
@@ -68,11 +68,11 @@ window.CASES = [
       ],
       delivery: [
         "Com o desenvolvedor e o designer, criamos protótipos iterativos em sprints semanais e construímos o MVP. Validei com 198 alunos e 13 professoras em sala de aula real e iterei com dados do Amplitude e feedback direto: removi funcionalidades de baixo uso, ampliei o acervo de cenários e personagens e construí o Portal da Escola.",
-        "Ao final de 2019: 6 escolas, 1.581 alunos, 85 professores e 31.620 páginas criadas pelos próprios alunos. Essa tração sustentou a decisão de evoluir para a plataforma web."
+        "Ao final de 2019: 7 escolas, 1.581 alunos, 85 professores e 31.620 páginas criadas pelos próprios alunos. Essa tração sustentou a decisão de evoluir para a plataforma web."
       ],
       resultados: [
-        "Piloto: conversão de pais compradores de 65,6% (meta de 60%), ticket médio de R$ 38,00, margem de 43,34%, 92% das professoras com alta satisfação e 100% das escolas renovando contrato. O produto eliminou cerca de 7 horas de trabalho não pedagógico por professor por projeto.",
-        "Em 12 meses, de 1 escola piloto para 6 contratantes: faturamento de R$ 8.500 para R$ 115.000 (+1.253%), alunos ativos de 200 para 1.990 (+895%) e exemplares produzidos de 224 para 2.404 (+973%). LTV/CAC de cerca de 5x e churn zero na primeira renovação."
+        "Piloto: conversão de pais compradores de 65,6% (meta de 60%), ticket médio de R$ 38,00, 92% das professoras com alta satisfação e 100% das escolas renovando contrato. O produto eliminou cerca de 7 horas de trabalho não pedagógico por professor por projeto.",
+        "Em 12 meses, de 1 escola piloto para 7 contratantes: faturamento de R$ 8.500 para R$ 115.000 (+1.253%), alunos ativos de 200 para 1.990 (+895%) e exemplares produzidos de 224 para 2.404 (+973%). LTV/CAC de cerca de 5x e churn zero na primeira renovação."
       ],
       aprendizados: [
         "Dado qualitativo vale tanto quanto métrica. O Amplitude mostrava que as crianças usavam todos os recursos, mas foi vendo o orgulho delas na noite de autógrafos que entendi o que de fato entregávamos.",
