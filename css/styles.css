@@ -211,20 +211,11 @@ mark { background: linear-gradient(135deg, #DBE7FF, #EDE5FF); color: var(--prima
 /* Contato */
 .contact .big { color: #fff; }
 .contact .big u { background: linear-gradient(transparent 62%, rgba(188,228,38,.45) 62%); }
-.contact__grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(24px, 5vw, 72px); align-items: start; }
-.contact__links { display: grid; gap: 12px; }
-.contact__links a { display: flex; justify-content: space-between; align-items: center; padding: 20px 22px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.22); border-radius: 16px; font: 700 1.15rem var(--f); text-decoration: none; transition: background .2s, transform .2s; }
-.contact__links a::after { content: "↗"; color: var(--lime); }
-.contact__links a:hover { background: rgba(255,255,255,.16); transform: translateX(4px); }
-.form { display: grid; gap: 16px; background: var(--card); color: var(--fg); border-radius: 24px; padding: clamp(22px, 3vw, 34px); box-shadow: 0 30px 60px -30px rgba(0,0,0,.6); }
-.form label { display: grid; gap: 6px; font: 600 .86rem var(--f); }
-.form input, .form textarea { font: 400 1rem var(--f); background: var(--bg); color: var(--fg); border: 1px solid #CBD5E1; border-radius: 12px; padding: 13px 14px; width: 100%; }
-.form input:focus, .form textarea:focus { outline: 3px solid rgba(37,99,235,.35); border-color: var(--primary); }
-.form [aria-invalid="true"] { border-color: #DC2626; background: #FEF2F2; }
-.form .btn { justify-self: start; }
-.form__status { margin: 0; min-height: 1.5em; font-weight: 600; color: var(--primary-d); }
-.hp { position: absolute; left: -9999px; }
-@media (max-width: 800px) { .contact__grid { grid-template-columns: 1fr; } }
+.contact__grid { max-width: 760px; }
+.contact__links { display: flex; flex-wrap: wrap; gap: 16px; }
+.contact__links a { display: grid; place-content: center; width: 68px; height: 68px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.28); border-radius: 20px; color: #fff; text-decoration: none; transition: background .2s, color .2s, transform .2s, border-color .2s; }
+.contact__links a[data-cv] { width: auto; padding: 0 28px; font: 700 1rem var(--f); }
+.contact__links a:hover { background: #fff; color: var(--primary-d); border-color: #fff; transform: translateY(-4px); }
 
 .footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 24px var(--gutter); font-size: .9rem; color: var(--muted-fg); background: var(--card); border-top: 1px solid var(--border); }
 

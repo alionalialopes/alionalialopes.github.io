@@ -120,36 +120,4 @@
       $$(".count").forEach(c => co.observe(c));
     }
   }
-
-  /* Formulário */
-  const form = $("#form"), status = $("#form-status");
-  form.addEventListener("submit", async e => {
-    e.preventDefault();
-    status.textContent = "";
-    const d = Object.fromEntries(new FormData(form));
-    let ok = true;
-    ["nome", "email", "mensagem"].forEach(n => {
-      const f = form.elements[n];
-      const bad = !f.value.trim() || (n === "email" && !/^\S+@\S+\.\S+$/.test(f.value));
-      f.setAttribute("aria-invalid", String(bad));
-      if (bad && ok) { f.focus(); ok = false; }
-    });
-    if (!ok) { status.textContent = "Preencha nome, um e-mail válido e a mensagem."; return; }
-    if (d._gotcha) return;
-    if (cfg.formEndpoint) {
-      status.textContent = "Enviando…";
-      try {
-        const r = await fetch(cfg.formEndpoint, { method: "POST", headers: { Accept: "application/json", "Content-Type": "application/json" }, body: JSON.stringify({ nome: d.nome, email: d.email, mensagem: d.mensagem }) });
-        if (!r.ok) throw new Error();
-        form.reset();
-        status.textContent = "Mensagem enviada. Obrigada pelo contato!";
-      } catch { status.textContent = "Não foi possível enviar agora. Tente novamente em instantes."; }
-    } else if (cfg.email) {
-      const body = `${d.mensagem}\n\n— ${d.nome} (${d.email})`;
-      location.href = `mailto:${cfg.email}?subject=${encodeURIComponent("Contato pelo site: " + d.nome)}&body=${encodeURIComponent(body)}`;
-      status.textContent = "Abrindo seu aplicativo de e-mail…";
-    } else {
-      status.textContent = "Formulário ainda não configurado. Use o LinkedIn para contato.";
-    }
-  });
 })();
