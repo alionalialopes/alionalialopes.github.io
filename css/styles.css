@@ -85,7 +85,7 @@ mark { background: linear-gradient(135deg, #DBE7FF, #EDE5FF); color: var(--prima
 .blob { display: none; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: 0; }
-  .hero { gap: 0; align-items: start; }
+  .hero { gap: 0; align-items: start; padding-top: 24px; }
   .hero__text { display: contents; }
   .hero__text .eyebrow { justify-self: start; }
   .hero__photo { order: 1; width: min(80%, 340px); margin: 4px 0 36px; }
