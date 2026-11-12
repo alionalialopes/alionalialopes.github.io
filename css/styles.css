@@ -85,7 +85,7 @@ mark { background: linear-gradient(135deg, #DBE7FF, #EDE5FF); color: var(--prima
 .blob { display: none; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: 0; }
-  .hero__photo { order: -1; width: min(80%, 340px); margin-bottom: 8px; }
+  .hero__photo { width: min(80%, 340px); margin-top: 8px; }
   .sticker { left: -12px; bottom: 16px; padding: 14px 18px; font-size: .88rem; gap: 12px; } .sticker b { font-size: 3.2rem; }
   }
 
