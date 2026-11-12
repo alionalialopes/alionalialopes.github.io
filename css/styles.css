@@ -205,9 +205,9 @@ mark { background: linear-gradient(135deg, #DBE7FF, #EDE5FF); color: var(--prima
 
 /* Conhecimentos */
 .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.skill { padding: 26px; background: var(--card); border: 1px solid var(--border); border-radius: 22px; box-shadow: var(--shadow); }
-.skill h3 { font-size: 1.25rem; margin-bottom: 16px; }
-.skill li { display: inline-block; margin: 0 6px 8px 0; padding: 5px 13px; background: var(--muted); border: 1px solid var(--border); border-radius: 999px; font: 500 .86rem var(--f); transition: background .15s, color .15s, border-color .15s; }
+.skill { padding: 20px; background: var(--card); border: 1px solid var(--border); border-radius: 22px; box-shadow: var(--shadow); }
+.skill h3 { font-size: 1.1rem; margin-bottom: 12px; }
+.skill li { display: inline-block; margin: 0 4px 6px 0; padding: 3px 10px; background: var(--muted); border: 1px solid var(--border); border-radius: 999px; font: 500 .78rem var(--f); transition: background .15s, color .15s, border-color .15s; }
 .skill li:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
 @media (max-width: 960px) { .skills { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .skills { grid-template-columns: 1fr; } }
